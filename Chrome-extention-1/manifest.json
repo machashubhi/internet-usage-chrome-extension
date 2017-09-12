@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "GChrome extension 1",
+  "description": "This extension analyses the time spent on websites giving a detailed analysis of how you landed on a website, how much time you spent there, was it a distraction or work-based",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+	"default_title": "Click here!",
+	""
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+	"background"
+  ]
+  "background": {
+    "scripts": ["background.js"],
+	"page": "background.html",
+	"persistent": false
+  },
+}
